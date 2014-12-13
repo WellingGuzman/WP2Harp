@@ -14,13 +14,13 @@ if (!defined('WP2HARP_PLUGIN_SLUG')) {
 }
 
 if (!defined('WP2HARP_PLUGIN_PATH')) {
-	define('WP2HARP_PLUGIN_PATH', plugin_dir_path(__FILE__));
+  define('WP2HARP_PLUGIN_PATH', plugin_dir_path(__FILE__));
 }
 
 add_action( 'admin_menu', 'wp2harp_plugin_menu' );
 
 function wp2harp_plugin_menu() {
-	add_options_page( 'My Plugin Options', 'WP 2 Harp', 'manage_options', 'wp2harp', 'wp2harp_plugin_options' );
+  add_options_page( 'My Plugin Options', 'WP 2 Harp', 'manage_options', 'wp2harp', 'wp2harp_plugin_options' );
 }
 
 function wp2harp_plugin_options() {
