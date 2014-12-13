@@ -10,7 +10,7 @@
 */
 
 if (!defined('WP2HARP_PLUGIN_SLUG')) {
-	define('WP2HARP_PLUGIN_SLUG', basename(dirname(__FILE__)));
+  define('WP2HARP_PLUGIN_SLUG', basename(dirname(__FILE__)));
 }
 
 if (!defined('WP2HARP_PLUGIN_PATH')) {
