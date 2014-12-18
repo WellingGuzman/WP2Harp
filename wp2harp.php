@@ -29,7 +29,7 @@ function wp2harp_plugin_options() {
 	}
 	
 	$result = wp2harp_get_posts();
-  wp2harp_create_zip($result);
+	wp2harp_create_zip($result);
 }
 
 function wp2harp_create_zip($result) {
@@ -66,9 +66,9 @@ function wp2harp_get_posts() {
   $paths = array();
   $data = array();
   $args = array(
-            'post_type'=>'any',
-            'posts_per_page' => -1
-          );
+    'post_type'=>'any',
+    'posts_per_page' => -1
+  );
   $posts = new WP_Query($args);
   
   if ($posts->have_posts()):
