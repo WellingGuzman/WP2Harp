@@ -24,11 +24,11 @@ function wp2harp_plugin_menu() {
 }
 
 function wp2harp_plugin_options() {
-	if ( !current_user_can( 'manage_options' ) ) {
-		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
-	}
-	$result = wp2harp_get_posts();
-	wp2harp_create_zip($result);
+  if ( !current_user_can( 'manage_options' ) ) {
+    wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+  }
+  $result = wp2harp_get_posts();
+  wp2harp_create_zip($result);
 }
 
 function wp2harp_create_zip($result) {
